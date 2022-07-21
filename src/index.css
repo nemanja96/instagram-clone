@@ -28,4 +28,8 @@
     outline: none;
     border-color: #aaa !important;
   }
+
+  input::placeholder{
+    font-size: 14px;
+  }
 }
