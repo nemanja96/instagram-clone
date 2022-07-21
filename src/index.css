@@ -6,6 +6,22 @@
   body{
     margin: 0;
     padding: 0;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  ::-webkit-scrollbar {
+    width: 2px;
+    height: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #fff;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 50px;
   }
 
   input:focus {

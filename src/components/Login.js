@@ -7,7 +7,7 @@ import googlePlay from '../assets/google-play.png';
 
 const Login = () => {
   return (
-    <div className='bg-[#fafafa] w-full h-screen flex justify-center items-center'>
+    <div className='bg-[#fafafa] w-full min-h-screen flex justify-center items-center'>
         <div className='max-w-5xl w-full md:mt-10 px-4'>
             <div className='flex gap-10 justify-center items-center'>
                 <img src={instagramPhoto} alt="Instagram" className='hidden md:block' />
