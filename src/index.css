@@ -32,4 +32,8 @@
   input::placeholder{
     font-size: 14px;
   }
+
+  #avatar {
+    background: linear-gradient(45deg, rgb(255, 230, 0), rgb(255, 0, 128) 80%);
+  }
 }

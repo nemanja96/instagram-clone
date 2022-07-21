@@ -30,7 +30,7 @@ const Nav = () => {
                     <Avatar src={avatar} sx={{ width: 25, height: 25 }} className='text-gray-900 ml-4' />
                 </div>
             </div>
-            <div className="sm:hidden flex justify-between items-center w-full px-4 py-2">
+            <div className="sm:hidden flex justify-between items-center w-full px-4 py-3">
                 <CameraAltOutlinedIcon sx={{ width: 30, height: 30 }} className='text-gray-900' />
                 <img src={logo} alt="Instagram" width="105px" />    
                 <Avatar src={avatar} sx={{ width: 30, height: 30 }} className='text-gray-900' />
