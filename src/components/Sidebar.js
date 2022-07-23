@@ -1,6 +1,7 @@
 import React from 'react'
 import Avatar from '@mui/material/Avatar';
-import avatar from '../assets/avatar.png';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { auth } from '../firebase';
 import { Link } from "react-router-dom";
 import SidebarItem from './SidebarItem';
 import sidebarPhoto1 from '../assets/sidebar/sidebarPhoto1.jpg';
@@ -10,15 +11,24 @@ import sidebarPhoto4 from '../assets/sidebar/sidebarPhoto4.jpg';
 import sidebarPhoto5 from '../assets/sidebar/sidebarPhoto5.jpg';
 
 const Sidebar = () => {
+
+    const [user] = useAuthState(auth);
+
+    const createUsername = () => {
+        let emailAddress = user?.email;
+        const accountUsername = emailAddress.split("@")[0];
+        return accountUsername;
+      }
+
   return (
     <div className='mt-6'>
         <div>
             <Link to="/profile">
                 <div className='flex items-center gap-4 mb-4'>
-                    <Avatar src={avatar} sx={{ width: 55, height: 55 }} />
+                    <Avatar src={user?.photoURL} sx={{ width: 55, height: 55 }}>{user?.email[0].toUpperCase()}</Avatar>
                     <div>
-                        <h3 className='text-[#262626] text-sm font-semibold'>nemanjaradivojevic</h3>
-                        <h4 className='text-gray-400 text-sm font-normal'>Nemanja Radivojevic</h4>
+                        <h3 className='text-[#262626] text-sm font-semibold'>{createUsername()}</h3>
+                        <h4 className='text-gray-400 text-sm font-normal'>{user?.displayName || user?.email}</h4>
                     </div>
                 </div>
             </Link>

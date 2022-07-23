@@ -16,12 +16,6 @@ const Main = () => {
             <Stories />
             <div>
               <Post avatarUrl={avatar} username="nemanjaradivojevic" postImgUrl={photo} postLikes="105 svidjanja" postDescription="Ovo je opis videa." postTime="PRE 15 SATI" />
-              <Post avatarUrl={avatar} username="nemanjaradivojevic" postImgUrl={photo} postLikes="105 svidjanja" postDescription="Ovo je opis videa." postTime="PRE 15 SATI" />
-              <Post avatarUrl={avatar} username="nemanjaradivojevic" postImgUrl={photo} postLikes="105 svidjanja" postDescription="Ovo je opis videa." postTime="PRE 15 SATI" />
-              <Post avatarUrl={avatar} username="nemanjaradivojevic" postImgUrl={photo} postLikes="105 svidjanja" postDescription="Ovo je opis videa." postTime="PRE 15 SATI" />
-              <Post avatarUrl={avatar} username="nemanjaradivojevic" postImgUrl={photo} postLikes="105 svidjanja" postDescription="Ovo je opis videa." postTime="PRE 15 SATI" />
-              <Post avatarUrl={avatar} username="nemanjaradivojevic" postImgUrl={photo} postLikes="105 svidjanja" postDescription="Ovo je opis videa." postTime="PRE 15 SATI" />
-              <Post avatarUrl={avatar} username="nemanjaradivojevic" postImgUrl={photo} postLikes="105 svidjanja" postDescription="Ovo je opis videa." postTime="PRE 15 SATI" />
             </div>
           </div>
           <div className="hidden lg:w-5/12 lg:block">
