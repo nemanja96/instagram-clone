@@ -4,15 +4,15 @@
 
 ## Login Page
 
-<img src="instagram01.PNG" />
+<img src="instagram01.png" />
 
 ## Home Page
 
-<img src="instagram02.PNG" />
+<img src="instagram02.png" />
 
 ## Profile Page
 
-<img src="instagram03.PNG" />
+<img src="instagram03.png" />
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
